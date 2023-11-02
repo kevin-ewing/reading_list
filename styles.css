@@ -1,0 +1,100 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
+
+@font-face {
+  font-family: "ATWriter";
+  src: url("atwriter.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  line-height: 1;
+  color: #333;
+  font-family: "ATWriter", Arial, sans-serif; /* Apply the ATWriter font */
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  /* Add a max-width for the overall body */
+  max-width: 1100px;
+  min-width: 800px;
+  /* Center the body content */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-transform: uppercase; /* Make text uppercase */
+  text-align: center; /* Center the title */
+  /* font-family: 'Special Elite', Arial, sans-serif; Apply the Special Elite font */
+}
+
+p {
+  color: #666;
+}
+
+.div-landing,
+.div-landing div {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-wrap: nowrap; /* Prevent flex items from wrapping */
+}
+
+.div-landing > * {
+  flex: 1; /* Give flex items the ability to grow and shrink as needed */
+}
+
+.handwritten-landing {
+  font-family: "Waiting for the Sunrise", cursive;
+  font-size: 20px;
+  color: #251607;
+  text-decoration: underline;
+  text-decoration-color: #333; /* Replace #333 with the color of your choice */
+  text-decoration-thickness: 2px; /* Set the thickness of the underline */
+  white-space: pre; /* This will preserve spaces and line breaks */
+}
+
+.table {
+  margin-top: 20px;
+  text-align: left; /* Aligns text to the left */
+  font-size: 18px; /* Sets the font size to 18 pixels */
+  border-collapse: separate; /* Use separate to allow border spacing to work */
+  border-spacing: 0; /* Removes the default spacing between borders */
+  width: 100%; /* Makes the table width 100% of its container */
+  border: 2px solid #333; /* Sets the border width to 2px and color to #333 */
+  border-radius: 3px; /* Adds rounded corners to the table with a radius of 3px */
+}
+
+.table th,
+.table td {
+  border-left: 2px solid #333;
+  border-top: 2px solid #333;
+  padding: 8px; /* Adds some padding inside the cells for better readability */
+  vertical-align: top; /* Aligns the content at the top of the cells */
+}
+
+.table th:first-child,
+.table td:first-child {
+  border-left: none;
+}
+
+.table tr:first-child th {
+  border-top: none;
+}
+
+.table tr:first-child th:first-child {
+  border-top-left-radius: 3px; /* Rounds the top-left corner of the table */
+}
+
+.table tr:first-child th:last-child {
+  border-top-right-radius: 3px; /* Rounds the top-right corner of the table */
+}
+
+.table tr:last-child td:first-child {
+  border-bottom-left-radius: 3px; /* Rounds the bottom-left corner of the table */
+}
+
+.table tr:last-child td:last-child {
+  border-bottom-right-radius: 3px; /* Rounds the bottom-right corner of the table */
+}

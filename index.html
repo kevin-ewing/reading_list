@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Reading Log</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+          const dateSpan = document.getElementById('current-date');
+          const today = new Date();
+          const dateString = today.toLocaleDateString(undefined, { // 'undefined' uses the browser's locale
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          });
+          dateSpan.textContent = " " + dateString + "    ";
+        });
+      </script>
+
+</head>
+<body>
+
+    <h1>My Reading Log</h1>
+    <div class="div-landing">
+        <div>Name: <div class="handwritten-landing"> Kevin Ewing </div> </div>
+        <div>Class Section: <div class="handwritten-landing"> b </div> </div>
+        <div>Dates: <div class="handwritten-landing"> <span id="current-date"></span></div> to: <div class="handwritten-landing">                   .</div></div>
+    </div>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Number</th>
+                <th>Date</th>
+                <th>Book title</th>
+                <th>Author</th>
+                <th>Number of pages read</th>
+                <th>Minutes read</th>
+                <th>Level of difficulty</th>
+                <th>Rating</th>
+                <th>Parent signature</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table data goes here -->
+        </tbody>
+    </table>
+
+
+</body>
+</html>
