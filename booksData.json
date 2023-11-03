@@ -1,0 +1,152 @@
+[
+  {
+    "title": "A Pact With The Devel",
+    "author": "Unknown",
+    "numPages": 13,
+    "creationDate": "Unknown",
+    "readTime": "7 minutes",
+    "difficulty": "Very Hard",
+    "rating": 8,
+    "signature": "RE"
+  },
+  {
+    "title": "Automate The Boring Stuff With Python",
+    "author": "Unknown",
+    "numPages": 505,
+    "creationDate": "03/25/2015",
+    "readTime": "13 hours and 30 minutes",
+    "difficulty": "Medium",
+    "rating": 9,
+    "signature": "RE"
+  },
+  {
+    "title": "Beautiful Data",
+    "author": "Unknown",
+    "numPages": 384,
+    "creationDate": "07/02/2009",
+    "readTime": "10 hours and 52 minutes",
+    "difficulty": "Medium",
+    "rating": 8.5,
+    "signature": "JE"
+  },
+  {
+    "title": "Clean Code",
+    "author": "Unknown",
+    "numPages": 462,
+    "creationDate": "09/16/2008",
+    "readTime": "13 hours and 49 minutes",
+    "difficulty": "Medium",
+    "rating": 9,
+    "signature": "RE"
+  },
+  {
+    "title": "Clojure For The Brave And True",
+    "author": "Unknown",
+    "numPages": 329,
+    "creationDate": "08/19/2015",
+    "readTime": "8 hours and 41 minutes",
+    "difficulty": "Medium",
+    "rating": 9,
+    "signature": "JE"
+  },
+  {
+    "title": "Cyber Crime And Espionage",
+    "author": "Will Gragido",
+    "numPages": 270,
+    "creationDate": "01/06/2011",
+    "readTime": "6 hours and 11 minutes",
+    "difficulty": "Hard",
+    "rating": 9.5,
+    "signature": "JE"
+  },
+  {
+    "title": "Digital Lighting And Rendering",
+    "author": "pfuentes",
+    "numPages": 152,
+    "creationDate": "09/22/2003",
+    "readTime": "Less than a minute",
+    "difficulty": "Very Hard",
+    "rating": 9,
+    "signature": "JE"
+  },
+  {
+    "title": "Exercises For Programmers",
+    "author": "Brian P. Hogan",
+    "numPages": 114,
+    "creationDate": "01/28/2016",
+    "readTime": "36 minutes",
+    "difficulty": "Hard",
+    "rating": 8.5,
+    "signature": "JE"
+  },
+  {
+    "title": "Getting Everything You Can Out Of All You Got",
+    "author": "Teddy",
+    "numPages": 384,
+    "creationDate": "04/15/2010",
+    "readTime": "9 hours and 48 minutes",
+    "difficulty": "Easy",
+    "rating": 8,
+    "signature": "JE"
+  },
+  {
+    "title": "Grokking Simplicity",
+    "author": "Unknown",
+    "numPages": 593,
+    "creationDate": "Unknown",
+    "readTime": "13 hours and 1 minute",
+    "difficulty": "Medium",
+    "rating": 9.5,
+    "signature": "JE"
+  },
+  {
+    "title": "How To Hack Like A Ghost",
+    "author": "Unknown",
+    "numPages": 265,
+    "creationDate": "04/05/2021",
+    "readTime": "6 hours and 11 minutes",
+    "difficulty": "Medium",
+    "rating": 10,
+    "signature": "JE"
+  },
+  {
+    "title": "Plato And The Nerd",
+    "author": "Edward Ashford Lee",
+    "numPages": 331,
+    "creationDate": "05/30/2023",
+    "readTime": "10 hours and 21 minutes",
+    "difficulty": "Medium",
+    "rating": 9.5,
+    "signature": "JE"
+  },
+  {
+    "title": "The Art Of R Programming",
+    "author": "Norman Matloff",
+    "numPages": 404,
+    "creationDate": "09/12/2011",
+    "readTime": "7 hours and 46 minutes",
+    "difficulty": "Medium",
+    "rating": 9,
+    "signature": "RE"
+  },
+  {
+    "title": "The Art Of Unix Programming",
+    "author": "Unknown",
+    "numPages": 549,
+    "creationDate": "08/05/2003",
+    "readTime": "15 hours and 59 minutes",
+    "difficulty": "Medium",
+    "rating": 8.5,
+    "signature": "RE"
+  },
+  {
+    "title": "The Checklist Manifesto How To Get Things Right",
+    "author": "Unknown",
+    "numPages": 223,
+    "creationDate": "08/20/2011",
+    "readTime": "3 hours and 11 minutes",
+    "difficulty": "Medium",
+    "rating": 8,
+    "signature": "JE"
+  }
+]

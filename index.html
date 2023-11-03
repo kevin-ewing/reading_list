@@ -6,12 +6,18 @@
     <title>My Reading Log</title>
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
           const dateSpan = document.getElementById('current-date');
           const today = new Date();
-          const dateString = today.toLocaleDateString(undefined, { // 'undefined' uses the browser's locale
+          const dateString = today.toLocaleDateString(undefined, { // 'undefined' uses th browser's locale
             year: 'numeric',
             month: 'long',
             day: 'numeric'
@@ -31,7 +37,7 @@
     </div>
 
 
-    <table class="table">
+    <table class="table" id="booksTable">
         <thead>
             <tr>
                 <th>Number</th>
@@ -50,6 +56,75 @@
         </tbody>
     </table>
 
+    <script>
+        fetch('booksData.json')
+        .then(response => response.json())
+        .then(books => {
+            let table = document.getElementById('booksTable');
+    
+            // Function to add a cell with 'handwritten' class without link
+            const addHandwrittenCell = (text, row) => {
+                let cell = row.insertCell();
+                cell.textContent = text;
+                cell.classList.add('handwritten');
+            };
 
+            const addCell = (text, row) => {
+                let cell = row.insertCell();
+                cell.textContent = text;
+            };
+    
+            // Function to add a cell with 'handwritten' class with link for title
+            const addLinkCell = (book, row) => {
+                let cell = row.insertCell();
+                let a = document.createElement('a');
+                // Replace spaces with dots or any other URL friendly character
+                // and encode the URI component to handle special characters
+                let bookTitleForURL = encodeURIComponent(book.title.replace(/ /g, '_'));
+                a.href = `./books/${bookTitleForURL}.pdf`;
+                a.textContent = book.title;
+                a.classList.add('handwritten');
+                cell.appendChild(a);
+            };
+    
+            // Add rows with book data
+            books.forEach((book, index) => {
+                let row = table.insertRow();
+                addCell(index + 1, row);
+                // Other cells with 'handwritten' class
+                addHandwrittenCell(book.creationDate, row);
+                addLinkCell(book, row); // Title with link
+                addHandwrittenCell(book.author, row);
+                addHandwrittenCell(book.numPages, row);
+                addHandwrittenCell(book.readTime, row);
+                addHandwrittenCell(book.difficulty, row);
+                addHandwrittenCell(book.rating, row);
+                addHandwrittenCell(book.signature, row);
+            });
+    
+            // Add 4 empty rows
+            for (let i = 0; i < 4; i++) {
+                let row = table.insertRow();
+                for (let j = 0; j < 9; j++) { // Assuming there are 9 columns
+                    let cell = row.insertCell();
+                    cell.textContent = j === 0 ? books.length + i + 1 : ''; // Numbering for empty rows
+                    if (j !== 0) { // Apply 'handwritten' class to all but the first cell
+                        cell.classList.add('handwritten');
+                    }
+                }
+            }
+        })
+        .catch(error => {
+            console.error('Error loading book data:', error);
+        });
+    </script>
+    <div style="margin-top:10px;margin-bottom:30px;">
+        Note: author information, book date, and book length are automatically extracted from the PDF's data and may be wrong. Furthermore, read time, rating, difficulty, and parent signature are generated values and do not represent my true opinions on the books.
+    </div>
+
+
+    <div>
+        © 2023 Kevin Ewing. All Rights Reserved.
+    </div>
 </body>
 </html>

@@ -43,16 +43,24 @@ p {
 
 .div-landing > * {
   flex: 1; /* Give flex items the ability to grow and shrink as needed */
+  font-size: 20px;
 }
 
 .handwritten-landing {
   font-family: "Waiting for the Sunrise", cursive;
-  font-size: 20px;
+  font-size: 25px;
   color: #251607;
   text-decoration: underline;
   text-decoration-color: #333; /* Replace #333 with the color of your choice */
   text-decoration-thickness: 2px; /* Set the thickness of the underline */
   white-space: pre; /* This will preserve spaces and line breaks */
+}
+
+.handwritten {
+  font-family: "Waiting for the Sunrise", cursive;
+  font-size: 20px;
+  color: #251607;
+  text-decoration: none;
 }
 
 .table {
@@ -97,4 +105,14 @@ p {
 
 .table tr:last-child td:last-child {
   border-bottom-right-radius: 3px; /* Rounds the bottom-right corner of the table */
+}
+
+.table tr {
+  min-height: 80px; /* Ensures that the row is at least 50px high */
+  height: 80px; /* Sets a fixed height of 50px for the rows */
+}
+
+.table td {
+  overflow: hidden; /* Hides content that overflows the cell's box */
+  /* or use 'overflow: auto;' if you want to add scrollbars when content overflows */
 }
