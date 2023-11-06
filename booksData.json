@@ -148,5 +148,15 @@
     "difficulty": "Medium",
     "rating": 8,
     "signature": "JE"
+  },
+  {
+    "title": "The Well Grounded Java Developer",
+    "author": "Benjamin J. Evans and Martijn Verburg",
+    "numPages": 496,
+    "creationDate": "06/22/2012",
+    "readTime": "16 hours and 25 minutes",
+    "difficulty": "Medium",
+    "rating": 9.5,
+    "signature": "JE"
   }
 ]
