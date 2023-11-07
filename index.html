@@ -80,7 +80,7 @@
                 let a = document.createElement('a');
                 // Replace spaces with dots or any other URL friendly character
                 // and encode the URI component to handle special characters
-                let bookTitleForURL = encodeURIComponent(book.title.replace(/ /g, '_'));
+                let bookTitleForURL = encodeURIComponent(book.title.replace(/ /g, '_')).toLowerCase();
                 a.href = `./books/${bookTitleForURL}.pdf`;
                 a.textContent = book.title;
                 a.classList.add('handwritten');
