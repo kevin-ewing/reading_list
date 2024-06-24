@@ -10,6 +10,16 @@
     "signature": "RE"
   },
   {
+    "title": "An Introduction To Programming In Go",
+    "author": "Unknown",
+    "numPages": 165,
+    "creationDate": "03/18/2013",
+    "readTime": "1 hour and 56 minutes",
+    "difficulty": "Easy",
+    "rating": 10,
+    "signature": "RE"
+  },
+  {
     "title": "Automate The Boring Stuff With Python",
     "author": "Unknown",
     "numPages": 505,
