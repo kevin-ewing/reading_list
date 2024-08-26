@@ -188,5 +188,15 @@
     "difficulty": "Medium",
     "rating": 9.5,
     "signature": "JE"
+  },
+  {
+    "title": "Think Bayes",
+    "author": "Unknown",
+    "numPages": 210,
+    "creationDate": "05/11/2020",
+    "readTime": "2 hours and 52 minutes",
+    "difficulty": "Easy",
+    "rating": 7.5,
+    "signature": "RE"
   }
 ]
